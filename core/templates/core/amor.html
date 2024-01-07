@@ -1,0 +1,58 @@
+{% extends "core/base.html" %}
+{% load static %}
+<title>{% block title %}Poemas de Amor{% endblock  %} </title>
+{% block TitleHeader %}
+<h1 class="display-4 text-white animated slideInDown mb-3">Poemas de Amor</h1> 
+{% endblock  %}
+{% block content %}
+<div class="container-xxl bg-light my-6 py-6 pb-0">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <p class="text-primary text-uppercase mb-2">//POEMAS</p>
+            <h1 class="display-6 mb-4">"Pensamientos del Alma"</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div class="testimonial-item bg-white rounded p-4">
+                <div class="d-flex align-items-center mb-4">
+                    <img class="flex-shrink-0 rounded-circle border p-1" src="{% static 'core/img/AboutPoema1.jpg' %}" alt="">
+                    <div class="ms-4">
+                        <h5 class="mb-1">Amor</h5>
+                        <span>Melodía del Silencio</span>
+                    </div>
+                </div>
+                <p class="mb-0">En la partitura de las emociones silenciosas, "Melodía del Silencio" invita a explorar el poder expresivo de las pausas, tejiendo una sinfonía donde el vacío cobra vida.</p>
+            </div>
+            <div class="testimonial-item bg-white rounded p-4">
+                <div class="d-flex align-items-center mb-4">
+                    <img class="flex-shrink-0 rounded-circle border p-1" src="{% static 'core/img/AboutPoema2.jpg' %}" alt="">
+                    <div class="ms-4">
+                        <h5 class="mb-1">Amor</h5>
+                        <span>Laberinto de Sueños</span>
+                    </div>
+                </div>
+                <p class="mb-0">Un paseo intrincado por los pasadizos oníricos de la imaginación, "Laberinto de Sueños" es un viaje literario donde las palabras son hilos que guían a través de la mente y los sueños.</p>
+            </div>
+            <div class="testimonial-item bg-white rounded p-4">
+                <div class="d-flex align-items-center mb-4">
+                    <img class="flex-shrink-0 rounded-circle border p-1" src="{% static 'core/img/AboutPoema1.jpg' %}" alt="">
+                    <div class="ms-4">
+                        <h5 class="mb-1">Amor</h5>
+                        <span>Reflejos del Alma Desnuda</span>
+                    </div>
+                </div>
+                <p class="mb-0">En este poemario, cada verso es un espejo que revela las capas más íntimas del ser. "Reflejos del Alma Desnuda" explora la vulnerabilidad con sinceridad desarmante y autenticidad cruda.</p>
+            </div>
+            <div class="testimonial-item bg-white rounded p-4">
+                <div class="d-flex align-items-center mb-4">
+                    <img class="flex-shrink-0 rounded-circle border p-1" src="{% static 'core/img/AboutPoema2.jpg' %}" alt="">
+                    <div class="ms-4">
+                        <h5 class="mb-1">Amor</h5>
+                        <span>Canción de los Recuerdos Efímeros</span>
+                    </div>
+                </div>
+                <p class="mb-0">"Canción de los Recuerdos Efímeros" da voz a momentos que se desvanecen como notas musicales en el viento, recordándonos la eternidad que incluso los recuerdos más fugaces pueden tener en el corazón.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock  %}
