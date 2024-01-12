@@ -10,8 +10,8 @@ class Service(models.Model):
     updated=models.DateTimeField(auto_now=True, verbose_name="Fecha de Edición")
 
     class Meta:
-        verbose_name="servicio"
-        verbose_name_plural="servicios"
+        verbose_name="poema"
+        verbose_name_plural="poemas"
         ordering=['-created']
 
     def __str__(self):
