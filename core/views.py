@@ -14,8 +14,6 @@ def categorias(request):
 def contacto(request):
     return render(request,"core/contacto.html")
 
-def amor(request):
-    return render(request,"core/amor.html")
 
 def desamor(request):
     return render(request,"core/desamor.html")
