@@ -10,8 +10,8 @@ class Amores(models.Model):
     updated=models.DateTimeField(auto_now=True, verbose_name="Fecha de Edición")
 
     class Meta:
-        verbose_name="poema_de_Amor"
-        verbose_name_plural="poemas_de_Amor"
+        verbose_name="Poema de Amor"
+        verbose_name_plural="poemas de Amor"
         ordering=['-created']
 
     def __str__(self):

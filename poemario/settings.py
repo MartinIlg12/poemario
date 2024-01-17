@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'core',
     'services',
     'amores',
+    'desamores',
 ]
 
 MIDDLEWARE = [
