@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'services',
     'amores',
     'desamores',
+    'romances',
 ]
 
 MIDDLEWARE = [

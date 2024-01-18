@@ -14,5 +14,3 @@ def categorias(request):
 def contacto(request):
     return render(request,"core/contacto.html")
 
-def romance(request):
-    return render(request,"core/romance.html")

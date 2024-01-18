@@ -1,0 +1,33 @@
+{% extends "core/base.html" %}
+{{romances}}
+{% load static %}
+<title>{% block title %}Poemas de Romance{% endblock  %} </title>
+{% block TitleHeader %}
+<h1 class="display-4 text-white animated slideInDown mb-3">Poemas de Romance</h1> 
+{% endblock  %}
+{% block content %}
+
+<div class="container-xxl bg-light my-6 py-6 pb-0">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <p class="text-primary text-uppercase mb-2">//POEMAS</p>
+            <h1 class="display-6 mb-4">"Pensamientos del Alma"</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            {% for romances in romances %}
+            <div class="testimonial-item bg-white rounded p-4">
+                <div class="d-flex align-items-center mb-4">
+                    <img class="flex-shrink-0 rounded-circle border p-1" src="{{romances.image.url}}" alt="">
+                    <div class="ms-4">
+                        <h5 class="mb-1">{{romances.title}}</h5>
+                        <span>{{romances.subtitle}}</span>
+                    </div>
+                </div>
+                <p class="mb-0">{{romances.content}}</p>
+            </div>
+            {% endfor %}
+        </div>
+        
+    </div>
+</div>
+{% endblock  %}
