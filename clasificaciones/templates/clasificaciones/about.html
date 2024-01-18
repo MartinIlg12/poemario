@@ -1,1 +1,43 @@
-hola 2
+{% extends "core/base.html" %}
+{% load static %}
+<title>{% block title %}Nuestros Poemas{% endblock  %} </title>
+{% block TitleHeader %}
+<h1 class="display-4 text-white animated slideInDown mb-3">Clasificación de los Poemas</h1> 
+{% endblock  %}
+{% block content %}
+<div class="container-xxl py-6">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <p class="text-primary text-uppercase mb-2">// Pensamientos del Alma</p>
+                <h1 class="display-6 mb-4">¿Cuáles seran nustros poemas?</h1>
+                <p class="mb-5"> Este compendio de reflexiones líricas promete ser un faro que guía al lector a través de las emociones universales, ofreciendo un eco resonante que conecta nuestras almas en la búsqueda compartida de significado y comprensión. Con cada palabra, "Pensamientos del Alma" promete ser un recordatorio poético de nuestra propia humanidad.</p>
+                <div class="row gy-5 gx-4">
+                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                <i class="fa fa-bread-slice text-white"></i>
+                            </div>
+                            <h5 class="mb-0">Éxtasis de la Juventud</h5>
+                        </div>
+                        <span>En la primera sección de "Pensamientos del Alma", nos sumergimos en la efervescencia de la juventud. Los poemas aquí exploran la chispa de la vida, la búsqueda apasionada de la identidad y el descubrimiento de las emociones más intensas. Cada texto es un río de vitalidad que fluye a través de la experiencia juvenil, capturando momentos efímeros con una intensidad deslumbrante.</span>
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            <a href="#">Autor</a><br><a href="#">Clasificación</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row img-twice position-relative h-100">
+                    <div class="col-6">
+                        <img class="img-fluid rounded" src="img/service-1.jpg" alt="">
+                    </div>
+                    <div class="col-6 align-self-end">
+                        <img class="img-fluid rounded" src="img/service-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock  %}
