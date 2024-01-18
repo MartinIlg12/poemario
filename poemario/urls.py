@@ -24,6 +24,7 @@ urlpatterns = [
     path('amores/', include('amores.urls')),
     path('desamores/', include('desamores.urls')),
     path('romances/', include('romances.urls')),
+    path('clasificaciones/', include('clasificaciones.urls')),
     path('admin/', admin.site.urls),
 ]
 

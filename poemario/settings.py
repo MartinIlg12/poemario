@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'amores',
     'desamores',
     'romances',
+    'clasificaciones',
 ]
 
 MIDDLEWARE = [
