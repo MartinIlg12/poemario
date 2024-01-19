@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'clasificaciones',
     'social',
     'pages',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -136,3 +137,29 @@ MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Ckeditor 
+
+CKEDITOR_CONFIGS = { 
+
+    'default': { 
+
+        'toolbar': 'Custom', 
+
+        'toolbar_Custom': [ 
+
+            ['Bold', 'Italic', 'Underline'], 
+
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-',  
+
+             'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'], 
+
+            ['Link', 'Unlink'], 
+
+            ['RemoveFormat', 'Source'] 
+
+        ] 
+
+    } 
+
+} 
