@@ -14,31 +14,39 @@
         <div class="row g-0 justify-content-center">
             <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
                 <p class="text-center mb-4">Utiliza este formulario para podernos enviar novedades, dudas o preguntas</a>.</p>
-                <form>
+                {% if 'ok' in request.GET %}
+                    <p><b>Su mensaje se ha enviado correctamento, pronto nos pondremos en contacto</b></p>
+                {% endif %}
+                {% if 'fail' in request.GET %}
+                    <p><b>Su mensaje no se ha enviado, intente de nuevo</b></p>
+                {% endif %}
+                <!--<form action="" method="POST">
+                    {% csrf_token %}
+                    <table>
+                        {{contact_form.as_table}}
+                    </table>
+                    <input type="submit" value="Enviar"/>
+                <form>-->
+                <form action="" method="POST">
+                    {% csrf_token %}
                     <div class="row g-3">
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Tu Nombre">
-                                <label for="name">Tu nombre</label>
+                                {{contact_form.name}}
                             </div>
+                            {{contact_form.name.errors}}
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="email" placeholder="Tu Email">
-                                <label for="email">Tu Email</label>
+                                {{contact_form.email}}
                             </div>
+                            {{contact_form.email.errors}}
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="subject" placeholder="Asunto">
-                                <label for="subject">Asunto</label>
+                                {{contact_form.message}}
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Escribe tu Mensaje aquí" id="message" style="height: 200px"></textarea>
-                                <label for="message">Mensaje</label>
-                            </div>
+                            {{contact_form.message.errors}}
                         </div>
                         <div class="col-12 text-center">
                             <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Enviar Mensaje</button>

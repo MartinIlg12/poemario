@@ -8,6 +8,5 @@ def home(request):
 def categorias(request):
     return render(request,"core/categorias.html")
 
-def contacto(request):
-    return render(request,"core/contacto.html")
+
 
