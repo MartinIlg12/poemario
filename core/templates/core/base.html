@@ -44,11 +44,11 @@
         <div class="row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
                 <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a class="small text-light" href="{% url 'home' %}">Home</a></li>
-                    <li class="breadcrumb-item"><a class="small text-light" href="{% url 'home' %}">Creditos</a></li>
-                    <li class="breadcrumb-item"><a class="small text-light" href="{% url 'home' %}">Terminos</a></li>
-                    <li class="breadcrumb-item"><a class="small text-light" href="{% url 'home' %}">Privacidad</a></li>
-                    
+                    {% load pages_extras %}
+                    {% get_pages as pages %}
+                    {% for page in pages %}
+                    <li class="breadcrumb-item"><a class="small text-light" href="{% url 'policies' page.id %}">{{page.title}}</a></li>
+                    {% endfor %}
                 </ol>
             </div>
             <div class="col-lg-6 px-5 text-end">

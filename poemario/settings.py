@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'romances',
     'clasificaciones',
     'social',
+    'pages',
 ]
 
 MIDDLEWARE = [
