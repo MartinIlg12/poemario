@@ -52,12 +52,20 @@
                 </ol>
             </div>
             <div class="col-lg-6 px-5 text-end">
-                <small>Follow us:</small>
+                <small>Redes Sociales</small>
                 <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn-lg-square text-primary border-end rounded-0" href="https://www.facebook.com/?locale=es_LA"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn-lg-square text-primary border-end rounded-0" href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
-                    <a class="btn-lg-square text-primary border-end rounded-0" href="https://ec.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn-lg-square text-primary pe-0" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    {% if URL_FACEBOOK != null %}
+                    <a class="btn-lg-square text-primary border-end rounded-0" href="{{URL_FACEBOOK}}"><i class="fab fa-facebook-f"></i></a>
+                    {% endif %}
+                    {% if URL_TWITTER != null %}
+                    <a class="btn-lg-square text-primary border-end rounded-0" href="{{URL_TWITTER}}"><i class="fab fa-twitter"></i></a>
+                    {% endif %}
+                    {% if URL_LINKEDLN != null %}
+                    <a class="btn-lg-square text-primary border-end rounded-0" href="{{URL_LINKEDLN}}"><i class="fab fa-linkedin-in"></i></a>
+                    {% endif %}
+                    {% if URL_LINKEDLN != null %}
+                    <a class="btn-lg-square text-primary pe-0" href="{{URL_INSTAGRAM}}"><i class="fab fa-instagram"></i></a>
+                    {% endif %}
                 </div>
             </div>
         </div>
